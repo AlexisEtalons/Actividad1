@@ -1,0 +1,18 @@
+<div
+  class="w-50 p-3 position-absolute top-50 start-50 translate-middle"
+  style="background-color: #fff">
+  <ul class="list-group">
+    <li class="list-group-item active" aria-current="true">Usuarios</li>
+
+    <li
+      class="list-group-item d-flex justify-content-evenly"
+      *ngFor="let d of data">
+      <a>{{ d.username }}</a>
+      <button type="button" class="btn btn-primary " [routerLink]="['/user',]">
+        Ver perfil
+      </button>
+    </li>
+  </ul>
+</div>
+
+
